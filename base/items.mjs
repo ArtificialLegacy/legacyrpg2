@@ -1,5 +1,5 @@
 class Item {
- constructor(tempName, tempID, tempDescription, tempIsTool, tempIsWeapon, tempIsDurable, tempType="static", tempToolStrength=null, tempWeaponStrength=null, tempCanMine=null, tempDurability=null, tempEvent=()=>{}){
+ constructor(tempName, tempID, tempDescription, tempIsTool, tempIsWeapon, tempIsDurable, tempNeedsAmmo, tempIsAmmo, tempIsSellable, tempIsConsumable, tempType="static", tempToolStrength=null, tempWeaponStrength=null, tempCanMine=null, tempDurability=null, tempConsumableStats=[null,null], tempSellPrice=null, tempUsedAmmo=null, tempAmmoType=null, tempSalvageItems=null, tempEvent=()=>{}){
   this.name = tempName; // Item display name.
   this.id = tempID; // Item internal name;
   this.description = tempDescription; // Item details;
@@ -12,6 +12,15 @@ class Item {
   this.durability = tempDurability; // Optional; Integer
   this.type = tempType; // Optional; String; ["static", "weapon", "shield", "helmet", "chestplate", "gloves", "leggings", "boots", "trinket"]
   this.event = tempEvent;
+  this.needsAmmo = tempNeedsAmmo; // Boolean
+  this.isAmmo = tempIsAmmo; // Boolean
+  this.usedAmmo = tempUsedAmmo; // Optional
+  this.ammoType = tempAmmoType; // Optional
+  this.salvageItems = tempSalvageItems; // Optional; Array; Based on item ID
+  this.isSellable = tempIsSellable; // Boolean
+  this.sellPrice = tempSellPrice; // Optional; Integer
+  this.isConsumable = tempIsConsumable; // Boolean
+  this.consumableStats = tempConsumableStats; // Optional; Array [health, hunger]
  }
 }
 
