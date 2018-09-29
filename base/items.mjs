@@ -10,7 +10,7 @@ class Item {
   this.weaponStrength = tempWeaponStrength; // Optional; Integer
   this.canMine = tempCanMine; // Optional; Array; ["wood", "minerals", "fish", "prey"]
   this.durability = tempDurability; // Optional; Integer
-  this.type = tempType; // Optional; String; ["static", "weapon", "shield", "helmet", "chestplate", "gloves", "leggings", "boots", "trinket"]
+  this.type = tempType; // Optional; String; ["static", "weapon", "shield", "helmet", "chestplate", "gloves", "leggings", "boots", "trinket", "ammo"]
   this.event = tempEvent; // Optional; Function; Triggered when item is used;
   this.needsAmmo = tempNeedsAmmo; // Boolean
   this.isAmmo = tempIsAmmo; // Boolean
