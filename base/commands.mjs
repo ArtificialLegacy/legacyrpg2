@@ -15,7 +15,7 @@ class Command {
       setTimeout(() => {
             this.activeCooldown = false;
             tempMessage.reply("Command cooldown finished!");
-        }, this.cooldown * 1000)
+        }, this.cooldown * 1000);
     } else {
       tempMessage.reply("Command cooldown active.");
     }
