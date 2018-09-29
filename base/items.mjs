@@ -1,5 +1,5 @@
 class Item {
- constructor(tempName, tempID, tempDescription, tempIsTool, tempIsWeapon, tempIsDurable, tempNeedsAmmo, tempIsAmmo, tempIsSellable, tempIsConsumable, tempType="static", tempToolStrength=null, tempWeaponStrength=null, tempCanMine=null, tempDurability=null, tempConsumableStats=[null,null], tempSellPrice=null, tempUsedAmmo=null, tempAmmoType=null, tempSalvageItems=null, tempEvent=()=>{}){
+ constructor(tempName, tempID, tempDescription, tempIsTool, tempIsWeapon, tempIsDurable, tempIsStackable, tempNeedsAmmo, tempIsAmmo, tempIsSalvagable, tempIsSellable, tempIsConsumable, tempIsFuel, tempType="static", tempCount=null, tempMaxStack=null, tempBaseDurability=null, tempToolStrength=null, tempWeaponStrength=null, tempCanMine=null, tempDurability=null, tempConsumableStats=[null,null], tempSellPrice=null, tempFuelPower, tempUsedAmmo=null, tempAmmoType=null, tempWeight=null, tempSalvageItems=null, tempEvent=()=>{}){
   this.name = tempName; // Item display name.
   this.id = tempID; // Item internal name;
   this.description = tempDescription; // Item details;
@@ -21,6 +21,14 @@ class Item {
   this.sellPrice = tempSellPrice; // Optional; Integer
   this.isConsumable = tempIsConsumable; // Boolean
   this.consumableStats = tempConsumableStats; // Optional; Array [health, hunger]
+  this.isStackable = tempIsStackable; // Boolean
+  this.maxStack = tempMaxStack; // Integer; Must be positive
+  this.baseDurability = tempBaseDurability; // Integer; Must be positive
+  this.count = tempCount; // Integer; Must be positive
+  this.isSalvagable = tempIsSalvagable; // Boolean
+  this.weight = tempWeight; // Optional; Integer; Hunger cost of equiping
+  this.isFuel = tempIsFuel; // Boolean
+  this.fuelPower = tempFuelPower; // Optional; Integer
  }
 }
 
