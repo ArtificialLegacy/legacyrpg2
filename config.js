@@ -14,8 +14,6 @@ let settings = {
   Discord: Discord,
   fs: fs,
   bot: bot,
-  Enmap: Enmap,
-  EnmapLevel: EnmapLevel,
   data: data
 };
 
