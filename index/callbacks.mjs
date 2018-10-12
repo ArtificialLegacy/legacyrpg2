@@ -3,6 +3,7 @@ let callbacks = {
   "noCommandValue": "No value provided!",
   "commandFail": "Command execution failed!",
   "noPermission": "No permission!",
+  "cooldownActive": "Command cooldown is still active!",
 }
 
 export default callbacks;
