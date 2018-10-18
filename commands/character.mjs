@@ -12,7 +12,7 @@ let character = new Command("character", 315, "rpg", "Creates and edits your cha
   }
   if(tempArgs[0] == "create"){
     if(!tempArgs[1]){
-      message.reply(callbacks.noInfo);
+      message.reply(callbacks.noCommandValue);
       return;
     } // name
     if(!tempArgs[2]){
