@@ -6,6 +6,7 @@ const bot = settings.bot;
 const data = settings.data;
 
 import commands from './base/commandExport.mjs';
+import callbacks from './index/callbacks.mjs';
 
 bot.on("ready", async () => {
     if(bot.guilds.size > 1) {
@@ -67,7 +68,7 @@ bot.on("message", async message => {
     if(command){
         command.run(message, args, prefix);
     } else {
-        message.reply("Unknown command.");
+        message.reply(callbacks.notCommand);
     }
     message.delete();
 });
