@@ -10,6 +10,20 @@ let character = new Command("character", 315, "rpg", "Creates and edits your cha
     message.reply(callbacks.noSubcommand); 
     return;
   }
+  if(tempArgs[0] == "create"){
+    if(!tempArgs[1]){
+      message.reply(callbacks.noInfo);
+      return;
+    } // name
+    if(!tempArgs[2]){
+      message.reply(callbacks.notEInfo);
+      return;
+    } // icon
+    if(!tempArgs[3]){
+      message.reply(callbacks.notEInfo);
+      return;
+    } // class
+  }
 });
 
 export default character;
