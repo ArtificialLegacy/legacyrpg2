@@ -3,6 +3,7 @@ import eval from '../commands/eval.mjs';
 import help from '../commands/help.mjs';
 import profile from '../commands/profile.mjs';
 import character from '../commands/character.mjs';
+import prefix from '../commands/prefix.mjs';
 
 let commands = {
   "botinfo": botinfo,
@@ -10,6 +11,7 @@ let commands = {
   "help": help,
   "profile": profile,
   "character": character,
+  "prefix": prefix,
 };
 
 export default commands;
