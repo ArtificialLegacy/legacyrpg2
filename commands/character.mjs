@@ -39,8 +39,6 @@ let character = new Command("character", 315, "rpg", "Creates and edits your cha
         "class": tempArgs[3],
       };
     }
-    
-    
   }
 });
 
