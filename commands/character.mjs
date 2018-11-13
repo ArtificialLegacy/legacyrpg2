@@ -23,6 +23,24 @@ let character = new Command("character", 315, "rpg", "Creates and edits your cha
       message.reply(callbacks.notEInfo);
       return;
     } // class
+    
+    if(tempArgs[3] !== "warrior" && tempArgs[3] !== "archer" && tempArgs[3] !== "mage" && tempArgs[3] !== "dwarf"){
+      tempMessage.reply("Invalid class.");
+    }
+    
+    let characters = data.get("characters");
+    if(!characters[tempMessage.guild.id]){
+      characters[tempMessage.guild.id] = {};
+    }
+    if(!characters[tempMessage.guild.id][tempMessage.author.id]){
+      characters[tempMessage.guild.id][tempMessage.author.id] = {
+        "name": tempArgs[1],
+        "icon": tempArgs[2],
+        "class": tempArgs[3],
+      };
+    }
+    
+    
   }
 });
 
