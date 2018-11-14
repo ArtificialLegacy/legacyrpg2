@@ -39,6 +39,13 @@ let character = new Command("character", 315, "rpg", "Creates and edits your cha
         "class": tempArgs[3],
       };
     }
+    data.set("characters", characters);
+  } else if(tempArgs[0] == "delete"){
+    let characters = data.get("characters");
+    if(!characters[tempMessage.guild.id] || !characters[tempMessage.guild.id][tempMessage.author.id]){
+      tempMessage.reply("~filler~");
+    }
+    delete characters[tempMessage.guild.id][tempMessage.author.id];
   }
 });
 
