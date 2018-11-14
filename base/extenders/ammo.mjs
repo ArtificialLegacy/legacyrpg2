@@ -1,6 +1,6 @@
 import Item from '../items.mjs';
 
-class Ammo exxtends Item {
+class Ammo extends Item {
 
 }
 
