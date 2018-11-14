@@ -23,3 +23,7 @@ let debug = new Command("debug", 0, "admin", "Bot debugging command. (Devs only)
 });
 
 export default debug;
+
+/*
+  Warning: This command is to be used in vain. Don't use this command for basic debugging on a public server. ALWAYS keep this command private to the bot owner.
+*/
