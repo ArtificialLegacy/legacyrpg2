@@ -5,12 +5,12 @@ class Command {
     this.category = tempCategory;
     this.description = tempDescription;
     this.action = tempAction;
-    this.activeCooldown = false;
+    this.activeCooldowns = {};
   }
   run(tempMessage, tempArgs, tempPrefix) {
-    if(this.activeCooldown == false) {
+    if(!this.activeCooldowns[tempMessage.author.id]) {
       this.action(tempMessage, tempArgs, tempPrefix);
-      this.activeCooldown = true;
+      this.activeCooldowns[tempMessage.author.id] = true;;
       console.log("chicken");
       setTimeout(() => {
             this.activeCooldown = false;
