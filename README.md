@@ -20,12 +20,12 @@ Legacy RPG *will* be a massive open-source rpg game built upon a discord bot.
 
 ##### Gameplay
 * !character <create, delete> <CREATE:name, icon, class>
-* !profile |<user>
+* !profile <user>
 * !inventory
 * !collect <wood, minerals, fish, prey, plants>
 * !craft <item, page>
 * !smelt <refuel, item, page>
-* !stats |<player>
+* !stats <player>
 * !combat
 * !coins
 * !dungeon <enter, interact, escape> <INTERACT: fight, loot>
@@ -49,4 +49,4 @@ Legacy RPG *will* be a massive open-source rpg game built upon a discord bot.
 * !consume <item>
 * !boost
 * !job <apply, quit, view> <APPLY: job>
-* !level |<player>
+* !level <player>
