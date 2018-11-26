@@ -11,7 +11,7 @@ class Command {
     if(!this.activeCooldowns[tempMessage.author.id]) {
       this.action(tempMessage, tempArgs, tempPrefix);
       this.activeCooldowns[tempMessage.author.id] = true;;
-      console.log("chicken");
+      console.log(`Command: ${this.name} run by ${tempMessage.author.id}; Raw message: ${tempMessage.content}`);
       setTimeout(() => {
             this.activeCooldown = false;
             tempMessage.reply(callbacks.cooldownActive);
