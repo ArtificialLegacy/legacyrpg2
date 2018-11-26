@@ -6,6 +6,7 @@ let callbacks = {
   "cooldownActive": "Command cooldown is still active!",
   "notCommand": "Command not found! Use the help command for more info.",
   "notECommand": "Missing values!",
+  "cooldownFinish": "Command cooldown is finished!",
 }
 
 export default callbacks;
