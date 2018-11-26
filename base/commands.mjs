@@ -14,10 +14,10 @@ class Command {
       console.log("chicken");
       setTimeout(() => {
             this.activeCooldown = false;
-            tempMessage.reply("Command cooldown finished!");
+            tempMessage.reply(callbacks.cooldownActive);
         }, this.cooldown * 1000);
     } else {
-      tempMessage.reply("Command cooldown active.");
+      tempMessage.reply(callbacks.cooldownFinish);
     }
   } 
 }
