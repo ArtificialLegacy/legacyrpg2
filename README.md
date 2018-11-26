@@ -50,4 +50,3 @@ Legacy RPG *will* be a massive open-source rpg game built upon a discord bot.
 * !boost
 * !job <apply, quit, view> <APPLY: job>
 * !level |<player>
-* 
