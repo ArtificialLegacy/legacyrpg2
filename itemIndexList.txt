@@ -1,1 +1,14 @@
-
+improvisedPickaxe
+improvisedAxe
+improvisedSword
+improvisedBow
+improvisedRod
+flintPickaxe
+flintAxe
+flintSword
+stonePickaxe
+stoneAxe
+stoneSword
+ironPickaxe
+ironAxe
+ironSword
