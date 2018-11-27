@@ -6,9 +6,15 @@ improvisedRod
 flintPickaxe
 flintAxe
 flintSword
+flintBow
+flintRod
 stonePickaxe
 stoneAxe
 stoneSword
+stoneBow
+stoneRod
 ironPickaxe
 ironAxe
 ironSword
+ironBow
+ironRod
