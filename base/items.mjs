@@ -1,5 +1,5 @@
 class Item {
- constructor(tempName, tempID, tempDescription, tempIsTool, tempIsWeapon, tempIsDurable, tempIsStackable, tempNeedsAmmo, tempIsAmmo, tempIsSalvagable, tempIsSellable, tempIsConsumable, tempIsFuel, tempType="static", tempCount=null, tempMaxStack=null, tempBaseDurability=null, tempToolStrength=null, tempWeaponStrength=null, tempCanMine=null, tempDurability=null, tempConsumableStats=[null,null], tempSellPrice=null, tempFuelPower, tempUsedAmmo=null, tempAmmoType=null, tempWeight=null, tempSalvageItems=null, tempEvent=()=>{}){
+ constructor(tempName, tempID, tempDescription, tempIsTool, tempIsWeapon, tempIsDurable, tempIsStackable, tempNeedsAmmo, tempIsAmmo, tempIsSalvagable, tempIsSellable, tempIsConsumable, tempIsFuel, tempType="static", tempCount=null, tempMaxStack=null, tempBaseDurability=null, tempToolStrength=null, tempWeaponStrength=null, tempCanMine=null, tempDurability=null, tempConsumableStats=[null,null], tempSellPrice=null, tempFuelPower, tempUsedAmmo=null, tempAmmoType=null, tempWeight=null, tempSalvageItems=null){
   this.name = tempName; // Item display name.
   this.id = tempID; // Item internal name;
   this.description = tempDescription; // Item details;
