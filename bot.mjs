@@ -9,11 +9,14 @@ import commands from './base/commandExport.mjs';
 import callbacks from './index/callbacks.mjs';
 
 bot.on("ready", async () => {
+    for(cmd in commands){
+        console.log(`Command loaded: ${commands[cmd]}`);
+    }
     if(bot.guilds.size > 1) {
         bot.user.setActivity(`Legacy-RPG on ${bot.guilds.size} servers!`);
         console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`)
     } else {
-        bot.user.setActivity(`Legacy-RPG on ${bot.guilds.size} server!`);
+        bot.user.setActivity(`$Legacy-RPG on ${bot.guilds.size} server!`);
         console.log(`${bot.user.username} is online on ${bot.guilds.size} server!`)
     }
     bot.user.setStatus("online");
@@ -24,7 +27,7 @@ bot.on("guildMemberAdd", async member => {
 })
 
 bot.on("guildCreate", async guild => {
-    console.log("Joined a new guild: " + guild.name);
+    console.log(`Legacy-RPG joined a guild: ${guild.name} `);
     if(bot.guilds.size > 1) {
         bot.user.setActivity(`Legacy-RPG on ${bot.guilds.size} servers!`);
     } else {
@@ -33,7 +36,7 @@ bot.on("guildCreate", async guild => {
 });
 
 bot.on("guildDelete", async guild => {
-    console.log("Left a guild: " + guild.name);
+    console.log(`${bot.user.username} left a guild: ${guild.name}`);
     if(bot.guilds.size > 1) {
         bot.user.setActivity(`Legacy-RPG on ${bot.guilds.size} servers!`);
     } else {
