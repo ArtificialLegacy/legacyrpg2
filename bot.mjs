@@ -5,8 +5,8 @@ const fs = settings.fs;
 const bot = settings.bot;
 const data = settings.data;
 
-import commands from './base/commandExport.mjs';
-import callbacks from './index/callbacks.mjs';
+import commands from './src/base/commandExport.mjs';
+import callbacks from './src/index/callbacks.mjs';
 
 bot.on("ready", async () => {
     for(cmd in commands){
