@@ -25,7 +25,7 @@ let character = new Command("character", 315, "rpg", "Creates and edits your cha
     } // class
     
     if(tempArgs[3] !== "warrior" && tempArgs[3] !== "archer" && tempArgs[3] !== "mage" && tempArgs[3] !== "dwarf"){
-      tempMessage.reply("Invalid class.");
+      tempMessage.reply(callbacks.invalidClass);
     }
     
     let characters = data.get("characters");
