@@ -7,6 +7,7 @@ let callbacks = {
   "notCommand": "Command not found! Use the help command for more info.",
   "notECommand": "Missing values!",
   "cooldownFinish": "Command cooldown is finished!",
+  "invalidClass": "Invalid class.",
 }
 
 export default callbacks;
