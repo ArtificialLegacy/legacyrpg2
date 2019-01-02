@@ -10,7 +10,7 @@ import Command from '../base/commands.mjs';
 let debug = new Command("debug", 0, "admin", "Bot debugging command. (Devs only)", (tempMessage, tempArgs, tempPrefix) => {
   if(!tempMessage.author.id === "261619158096150528") return tempMessage.reply(callbacks.noPermission);
 
-    let value = (eval(args.join(" ")));
+    let value = (eval(tempArgs.join(" ")));
 
     let embed = new Discord.RichEmbed()
     .setDescription("Eval")
