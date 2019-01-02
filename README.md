@@ -14,7 +14,7 @@ Legacy RPG *will* be a massive open-source rpg game built upon a discord bot.
 ##### Info
 * !botinfo
 * !help
-* !patch
+* !patch [patchNumber]
 * !updates
 * !credits
 
@@ -23,31 +23,32 @@ Legacy RPG *will* be a massive open-source rpg game built upon a discord bot.
 * !profile [user]
 * !inventory
 * !collect [wood, minerals, fish, prey, plants]
-* !craft <item, page>
-* !smelt <refuel, item, page>
-* !stats <player>
+* !craft [item, page]
+* !smelt [refuel, item, page]
+* !stats [player]
 * !combat
 * !coins
-* !dungeon <enter, interact, escape> <INTERACT: fight, loot>
-* !crates <view, open> <OPEN: name>
-* !duel <challenge, fight, stats> <CHALLENGE: player> <STATS: player>
-* !quest <view, start> <START: quest>
-* !brew <refill, item, page>
-* !enchant <item, page>
-* !trade <send, accept, view> <SEND: item> <ACCEPT: player>
-* !equip <item>
-* !unequip <slot>
-* !swap <slot1> <slot2>
-* !gamble <amount> <coin flip, dice roll>
-* !pay <player> <amount>
-* !repair <item>
-* !shop <view, buy> <BUY: item>
-* !sell <item>
-* !vault <view, retrieve, store> <VIEW: page> <RETRIEVE: slot> <STORE: slot>
-* !salvage <item>
-* !trash <item>
-* !consume <item>
+* !dungeon [enter, interact, escape> <INTERACT: fight, loot]
+* !crates [view, open] [OPEN: name]
+* !duel [challenge, fight, stats> <CHALLENGE: player> <STATS: player]
+* !quest [view, start> <START: quest]
+* !brew [refill, item, page]
+* !enchant [item, page]
+* !trade [send, accept, view] [SEND: item> <ACCEPT: player]
+* !equip [item]
+* !unequip [slot]
+* !swap [slot1] [slot2]
+* !gamble [amount] [coin flip, dice roll]
+* !pay [player] [amount]
+* !repair [item]
+* !shop [view, buy] [BUY: item]
+* !sell [item]
+* !vault [view, retrieve, store] [VIEW: page] [RETRIEVE: slot] [STORE: slot]
+* !salvage [item]
+* !trash [item]
+* !consume [item]
 * !boost
-* !job <apply, quit, view> <APPLY: job>
-* !level <player>
-* !rune <view, use> <USE: rune>
+* !job [apply, quit, view] [APPLY: job]
+* !level [player]
+* !rune [view, use] [USE: rune]
+* !auction [view, buy, sell] [BUY: itemID] [SELL: itemIndex, count]
