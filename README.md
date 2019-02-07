@@ -28,13 +28,13 @@ Legacy RPG *will* be a massive open-source rpg game built upon a discord bot.
 * !stats [player]
 * !combat
 * !coins
-* !dungeon [enter, interact, escape> <INTERACT: fight, loot]
+* !dungeon [enter, interact, escape] [INTERACT: fight, loot]
 * !crates [view, open] [OPEN: name]
-* !duel [challenge, fight, stats> <CHALLENGE: player> <STATS: player]
-* !quest [view, start> <START: quest]
+* !duel [challenge, fight, stats>] [CHALLENGE: player> <STATS: player]
+* !quest [view, start] [START: quest]
 * !brew [refill, item, page]
 * !enchant [item, page]
-* !trade [send, accept, view] [SEND: item> <ACCEPT: player]
+* !trade [send, accept, view] [SEND: item] [ACCEPT: player]
 * !equip [item]
 * !unequip [slot]
 * !swap [slot1] [slot2]
